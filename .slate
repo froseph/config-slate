@@ -4,6 +4,7 @@
 config defaultToCurrentScreen true
 config nudgePercentOf screenSize
 config resizePercentOf screenSize
+config keyboardLayout dvorak
 
 # Resize Bindings
 bind right:alt       resize +10% +0
@@ -16,8 +17,8 @@ bind up:ctrl;alt     resize +0   +10% bottom-right
 bind down:ctrl;alt   resize +0   -10% bottom-right
 
 # Push Bindings
-bind right:ctrl;cmd  push right bar-resize:screenSizeX/3
-bind left:ctrl;cmd   push left  bar-resize:screenSizeX/3
+bind right:ctrl;cmd  push right bar-resize:screenSizeX/2
+bind left:ctrl;cmd   push left  bar-resize:screenSizeX/2
 bind up:ctrl;cmd     push up    bar-resize:screenSizeY/2
 bind down:ctrl;cmd   push down  bar-resize:screenSizeY/2
 
@@ -46,3 +47,11 @@ bind down:cmd;alt focus behind
 
 # Window Hints
 bind esc:cmd hint
+
+bind r:alt relaunch
+
+# not working, why?
+layout web-dev 'Google Chrome' push left bar-resize:screenSizeX*2/3 | push right bar-resize:screenSizeX/3
+
+bind space:ctrl toggle 'LimeChat'
+bind 1:ctrl layout web-dev
