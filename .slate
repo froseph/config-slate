@@ -55,5 +55,5 @@ bind r:alt relaunch
 # not working, why?
 layout web-dev 'Google Chrome' push left bar-resize:screenSizeX*3/5 | push right bar-resize:screenSizeX*2/5
 
-bind space:ctrl toggle 'LimeChat'
+bind space:cmd;ctrl toggle 'LimeChat'
 bind 1:ctrl layout web-dev
